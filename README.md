@@ -1,8 +1,8 @@
-## Product Manager Server
+# Product Manager Server
 
 This simple **Nodejs** server exposes an API allowing CRUD operations on _product_ objects.
 
-### API
+## API
 
 Routes:
 
@@ -13,7 +13,7 @@ Routes:
 - POST`/api/create`: creates new product with provided `name` and `price`
 - GET`/api/existsByName/:name`: returns whether product with `name` already exists
 
-### Schemas
+## Schemas
 
 A single schema is used by the server: _product_.
 
@@ -28,17 +28,17 @@ The model is handled via **Mongoose**.
 
 The model file exports an interface object abstracting the lowest level usage of the _product_.
 
-### Controller
+## Controller
 
 The product controller handles the many queries forwarded by the **router**: to each _product_ route its corresponding function in the controller.
 
 Minimal payload in responses, accompagnied with a meaningfull status code.
 
-### Router
+## Router
 
 Basic out of the box _express_ router, binding the endpoints the the right functions.
 
-### Server
+## Server
 
 Connection to the _mongodb_ database, as specified in the config file.
 
